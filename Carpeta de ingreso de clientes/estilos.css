@@ -1,0 +1,85 @@
+/* Estilos globales y básicos */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a8e6cf, #dcedc1); 
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos específicos del formulario */
+.form-card {
+  background: #ffffff;
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 520px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #4db6ac; /* Verde menta suave para el título */
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #3c5b59; 
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a8e6cf; 
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f1f8f6; 
+  color: #3c5b59; /* Gris oscuro para los textos en los campos */
+  transition: border-color 0.3s, background-color 0.3s;
+  height: 44px; /* Asegura que todos los campos tengan la misma altura */
+}
+
+input::placeholder {
+  color: #6a9e8f; 
+}
+
+input:focus, select:focus {
+  border-color: #4db6ac; /* Borde más intenso en verde menta */
+  background-color: #ffffff; 
+  outline: none;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #4db6ac; /* Botón verde menta */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+button:hover {
+  background: #3d9c93; 
+  transform: scale(1.02);
+}
